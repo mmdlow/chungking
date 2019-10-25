@@ -5,10 +5,20 @@
   font-weight: bold;
   color: $color-black;
   text-decoration: none !important;
+  display: inline-block;
 
-  &:hover {
-    color: $color-black;
-    border-bottom: $border-weight solid $color-black;
+  &:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    height: $border-weight;
+    background: $color-black;
+    transition: width 0.3s ease 0s;
+    width: 0;
+  }
+
+  &:hover:after {
+    width: 100%;
   }
 }
 
