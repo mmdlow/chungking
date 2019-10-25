@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
-    waddup
-    {{ content }}
-  </body>
+<body>
+  <header class="py-2 header-nav">
+    <div class="header-contents">
+      <span>{{ site.title }}</span>
+      <div style="float: right;">
+        <span class="px-1">About</span>
+        <span class="px-1">Posts</span>
+      </div>
+    </div>
+  </header>
+  {{ content }}
+</body>
+
 </html>

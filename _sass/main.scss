@@ -1,0 +1,10 @@
+@import "variables";
+@import "utilities";
+
+header.header-nav {
+  border-bottom: $border-weight solid $color-black;
+}
+
+header.header-nav .header-contents {
+  display: inline;
+}
