@@ -1,10 +1,10 @@
-$font-family: "Helvetica Neue", "Archivo", Arial, sans-serif;
+/* Font */
+$font-family-sans-serif: "Helvetica Neue", "Archivo", Arial, sans-serif;
+$font-family-serif: "Libre Baskerville", serif;
 $font-family-mono: "Inconsolata", "Consolas", monospace;
 $font-size: 16px;
 
 $border-weight: 2px;
-
-$base-padding: 5px;
 
 /* Breakpoints */
 $breakpoint-sm: 576px;

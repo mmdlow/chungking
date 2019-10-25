@@ -1,11 +1,32 @@
 @import "variables";
 
+/* Menu Links */
+.header-link {
+  font-weight: bold;
+  color: $color-black;
+  text-decoration: none !important;
+
+  &:hover {
+    color: $color-black;
+    border-bottom: $border-weight solid $color-black;
+  }
+}
+
 /* Layout */
 @media (max-width: $breakpoint-lg) {
   .width-sm-stretch {
+    display: block !important;
     width: 100% !important;
   }
 }
+
+// Not in use
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table
+}
+.clearfix:after { clear: both }
 
 /* Padding */
 .p {

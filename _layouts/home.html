@@ -3,13 +3,13 @@
 {% include head.html %}
 
 <body>
-  <header class="py-2 header-nav">
-    <div class="header-contents">
+  <header class="width-sm-stretch p-2 header-nav">
+    <div class="my-2">
       <span>{{ site.title }}</span>
-      <div style="float: right;">
-        <span class="px-1">About</span>
-        <span class="px-1">Posts</span>
-      </div>
+    </div>
+    <div class="my-2">
+      <a class="header-link pl-2" href="#">About</a>
+      <a class="header-link pl-2" href="#">Posts</a>
     </div>
   </header>
   {{ content }}
