@@ -13,12 +13,6 @@ body {
 }
 
 header.header-nav {
-  border-bottom: $border-weight solid $color-black;
   display: flex;
   justify-content: space-between;
-}
-
-header.header-nav .header-contents {
-  display: table;
-  box-sizing: border-box !important;
 }

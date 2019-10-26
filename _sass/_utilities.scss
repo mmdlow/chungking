@@ -1,24 +1,38 @@
 @import "variables";
 
 /* Menu Links */
-.header-link {
-  font-weight: bold;
-  color: $color-black;
-  text-decoration: none !important;
-  display: inline-block;
-
-  &:after {
-    content: "";
-    display: block;
-    margin: 0 auto;
-    height: $border-weight;
-    background: $color-black;
-    transition: width 0.3s ease 0s;
-    width: 0;
+.header {
+  &-brand {
+    font-weight: bold !important;
+    color: $color-gray;
   }
 
-  &:hover:after {
-    width: 100%;
+  &-link {
+    font-weight: bold !important;
+    color: $color-black;
+    text-decoration: none !important;
+    display: inline-block;
+
+    &:after {
+      content: "";
+      display: block;
+      margin: 0 auto;
+      height: $border-weight;
+      background: $color-black;
+      transition: width 0.3s ease 0s;
+      width: 0;
+    }
+
+    &:hover:after {
+      width: 100%;
+    }
+  }
+}
+
+/* Banner */
+.banner {
+  &-text {
+    font-size: $font-size * 4 !important;
   }
 }
 
@@ -30,6 +44,10 @@
   }
 }
 
+.content {
+  max-width: $content-width;
+}
+
 // Not in use
 .clearfix:before,
 .clearfix:after {
@@ -37,6 +55,15 @@
   display: table
 }
 .clearfix:after { clear: both }
+
+/* Borders */
+
+.border {
+  border-color: $border-color;
+  &-0 { border: 0; }
+  &-top { border-top: $border-weight solid; }
+  &-bottom { border-bottom: $border-weight solid; }
+}
 
 /* Padding */
 .p {
