@@ -48,6 +48,13 @@
   max-width: $content-width;
 }
 
+
+@for $i from 1 to 8 {
+  .col-#{$i} {
+    width: ($i / 8 * 100%);
+  }
+}
+
 // Not in use
 .clearfix:before,
 .clearfix:after {
