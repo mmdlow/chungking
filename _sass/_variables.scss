@@ -4,7 +4,15 @@ $font-family-serif: "Libre Baskerville", serif;
 $font-family-mono: "Inconsolata", "Consolas", monospace;
 $font-size: 16px;
 
+/* Colors */
+$color-black: black;
+$color-gray: #666666;
+
+$border-color: $color-black;
 $border-weight: 2px;
+
+/* Typical sizes */
+$content-width: 1024px;
 
 /* Breakpoints */
 $breakpoint-sm: 576px;
@@ -15,8 +23,5 @@ $base-space: 5px !default;
 
 $space-1: $base-space !default;
 $space-2: ($base-space * 2) !default;
-$space-3: ($base-space * 3) !default;
-$space-4: ($base-space * 4) !default;
-
-/* Colors */
-$color-black: black;
+$space-3: ($base-space * 4) !default;
+$space-4: ($base-space * 8) !default;
