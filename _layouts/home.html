@@ -3,7 +3,7 @@
 {% include head.html %}
 
 <body>
-  <header class="width-sm-stretch px-3 py-2 header-nav border-bottom">
+  <header class="width-sm-stretch px-3 py-2 header-nav header-background">
     <div class="my-2">
       <span class="header-brand">{{ site.title }}</span>
     </div>
@@ -12,16 +12,17 @@
       <a class="header-link mr-2 ml-lg-2 mr-lg-0" href="#">Posts</a>
     </div>
   </header>
-  <div class="content mx-auto p-3">
-    <div class="py-4">
-      <h1 class="banner-text">{{ site.title }}</h1>
-      <div class="py-2">
-        <div class="col-2 border-top">
-          <p>An elegant, function Jekyll theme.</p>
+  <div class="banner-background">
+    <div class="content mx-auto p-3">
+      <div class="py-4">
+        <h1 class="banner-text col-6 py-4">{{ site.title }}</h1>
+        <div class="pt-3 pb-4 col-3 border-top">
+          <p>An elegant, functional Jekyll theme.</p>
         </div>
       </div>
     </div>
   </div>
+
 </body>
 
 </html>
