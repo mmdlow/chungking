@@ -31,6 +31,23 @@
   &-background {
     background-color: $header-color;
   }
+
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* Footer */
+.footer {
+  &-background {
+    background-color: $color-lighter-gray;
+  }
+
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 /* Banner */
@@ -56,23 +73,24 @@
   max-width: $content-width;
 }
 
+.text-align-y {
+  display: flex;
+  align-items: center;
+}
 
+/* Columns */
 @for $i from 1 to 8 {
   .col-#{$i} {
     width: ($i / 8 * 100%);
   }
 }
 
-// Not in use
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table
+/* Evil Icon styling */
+.icon {
+  fill: $color-black !important;
 }
-.clearfix:after { clear: both }
 
 /* Borders */
-
 .border {
   border-color: $border-color;
   &-0 { border: 0; }
@@ -217,3 +235,12 @@
     }
   }
 }
+
+// Not in use
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table
+}
+.clearfix:after { clear: both }
