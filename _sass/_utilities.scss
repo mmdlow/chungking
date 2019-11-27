@@ -15,7 +15,7 @@
 
     &:after {
       content: "";
-      display: block;
+      display: flex;
       margin: 0 auto;
       height: $border-weight;
       background: $color-black;

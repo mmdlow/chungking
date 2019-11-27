@@ -1,0 +1,28 @@
+<div class="p-3 footer-nav footer-background">
+  <div class="my-2 text-align-y">
+    <span>Created by</span>
+    <span class="ml-1">{{ site.author }}</span>
+  </div>
+  <div class="my-2">
+    {% if site.instagram %}
+    <a class="mx-2" href="{{ site.instagram }}">
+      <div data-icon="ei-sc-instagram" data-size="s"></div>
+    </a>
+    {% endif %}
+    {% if site.twitter %}
+    <a class="mx-2" href="{{ site.twitter }}">
+      <div data-icon="ei-sc-twitter" data-size="s"></div>
+    </a>
+    {% endif %}
+    {% if site.facebook %}
+    <a class="mx-2" href="{{ site.facebook }}">
+      <div data-icon="ei-sc-facebook" data-size="s"></div>
+    </a>
+    {% endif %}
+    {% if site.github %}
+    <a class="mx-2" href="{{ site.github }}">
+      <div data-icon="ei-sc-github" data-size="s"></div>
+    </a>
+    {% endif %}
+  </div>
+</div>

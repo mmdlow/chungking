@@ -1,71 +1,29 @@
-<!DOCTYPE html>
-<html>
-{% include head.html %}
+---
+layout: default
+---
 
-<body>
-  <header class="width-sm-stretch px-3 py-2 header-nav header-background">
-    <div class="my-2">
-      <span class="header-brand">{{ site.title }}</span>
-    </div>
-    <div class="my-2">
-      <a class="header-link mr-2 ml-lg-2 mr-lg-0" href="#">About</a>
-      <a class="header-link mr-2 ml-lg-2 mr-lg-0" href="#">Posts</a>
-    </div>
-  </header>
-  <div class="banner-background">
-    <div class="content mx-auto p-3">
-      <div class="py-4">
-        <h1 class="banner-text col-6 py-4">{{ site.title }}</h1>
-        <p class="pt-3 pb-4 col-3 border-top">{{ site.description }}</p>
-      </div>
-    </div>
-  </div>
+<div class="banner-background">
   <div class="content mx-auto p-3">
-    {% for post in site.posts %}
     <div class="py-4">
-      <h1 class="mb-3">
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h1>
-
-      {% if post.blurb %}
-      <p class="mb-3">{{ post.blurb }}</p>
-      {% else %}
-      <p class="mb-3">{{ post.content | strip_html | truncatewords:30 }}</p>
-      {% endif %}
-
-      <span class="mb-3 post-block date">{{ post.date | date: '%d %b %Y' }}</span>
+      <h1 class="banner-text col-6 py-4">{{ site.title }}</h1>
+      <p class="pt-3 pb-4 col-3 border-top">{{ site.description }}</p>
     </div>
-    {% endfor %}
   </div>
-  <div class="p-3 footer-nav footer-background">
-    <div class="my-2 text-align-y">
-      <span>Created by</span>
-      <span class="ml-1">{{ site.author }}</span>
-    </div>
-    <div class="my-2">
-      {% if site.instagram %}
-      <a class="mx-2" href="{{ site.instagram }}">
-        <div data-icon="ei-sc-instagram" data-size="s"></div>
-      </a>
-      {% endif %}
-      {% if site.twitter %}
-      <a class="mx-2" href="{{ site.twitter }}">
-        <div data-icon="ei-sc-twitter" data-size="s"></div>
-      </a>
-      {% endif %}
-      {% if site.facebook %}
-      <a class="mx-2" href="{{ site.facebook }}">
-        <div data-icon="ei-sc-facebook" data-size="s"></div>
-      </a>
-      {% endif %}
-      {% if site.github %}
-      <a class="mx-2" href="{{ site.github }}">
-        <div data-icon="ei-sc-github" data-size="s"></div>
-      </a>
-      {% endif %}
-    </div>
+</div>
+<div class="content mx-auto p-3">
+  {% for post in site.posts %}
+  <div class="py-4">
+    <h1 class="mb-3">
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </h1>
 
+    {% if post.blurb %}
+    <p class="mb-3">{{ post.blurb }}</p>
+    {% else %}
+    <p class="mb-3">{{ post.content | strip_html | truncatewords:25 }}</p>
+    {% endif %}
+
+    <span class="mb-3 post-block date">{{ post.date | date: '%d %b %Y' }}</span>
   </div>
-</body>
-
-</html>
+  {% endfor %}
+</div>
