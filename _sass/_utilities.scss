@@ -71,6 +71,10 @@
 
 .content {
   max-width: $content-width;
+
+  &-wrapper {
+    min-height: calc(100vh - 151px);
+  }
 }
 
 .text-align-y {

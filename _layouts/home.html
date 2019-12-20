@@ -2,34 +2,37 @@
 layout: default
 ---
 
-<div class="banner-background">
+<div class="content-wrapper">
+  <div class="banner-background">
+    <div class="content mx-auto p-3">
+      <div class="py-4">
+        <h1 class="banner-text col-6 py-4">{{ site.title }}</h1>
+        <p class="pt-3 pb-4 col-3 border-top">{{ site.description }}</p>
+      </div>
+    </div>
+  </div>
   <div class="content mx-auto p-3">
-    <div class="py-4">
-      <h1 class="banner-text col-6 py-4">{{ site.title }}</h1>
-      <p class="pt-3 pb-4 col-3 border-top">{{ site.description }}</p>
-    </div>
-  </div>
-</div>
-<div class="content mx-auto p-3">
-  {% for post in site.posts %}
-  <div class="py-4 flex space-between">
-    <div>
-      <h1 class="mb-3">
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h1>
+    {% for post in site.posts %}
+    <div class="py-4 flex space-between">
+      <div>
+        <h1 class="mb-3">
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h1>
 
-      {% if post.blurb %}
-      <p class="mb-3">{{ post.blurb | truncatewords:25 }}</p>
-      {% else %}
-      <p class="mb-3">{{ post.content | strip_html | truncatewords:25 }}</p>
-      {% endif %}
+        {% if post.blurb %}
+        <p class="mb-3">{{ post.blurb | truncatewords:25 }}</p>
+        {% else %}
+        <p class="mb-3">{{ post.content | strip_html | truncatewords:40 }}</p>
+        {% endif %}
 
-      <span class="mb-3 post-block date">{{ post.date | date: '%d %b %Y' }}</span>
+        <span class="mb-3 post-block date">{{ post.date | date: '%d %b %Y' }}</span>
+      </div>
+      <div class="pl-2 flex align-center">
+        {% if post.image %}
+        <a href="{{ post.url | prepend: site.baseurl }}">
+          <img class="image-thumbnail" src="{{ post.image | prepend: site.baseurl }}"></a>
+        {% endif %}</div>
     </div>
-    <div class="pl-2 flex align-center">
-      {% if post.image %}
-      <img class="image-thumbnail" src="{{ post.image | prepend: site.baseurl }}">
-      {% endif %}</div>
+    {% endfor %}
   </div>
-  {% endfor %}
 </div>
