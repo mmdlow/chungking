@@ -236,6 +236,28 @@
   }
 }
 
+/* images */
+img.image {
+  &-thumbnail {
+    width: $img-width-sm;
+    height: $img-height-sm;
+    object-fit: cover;
+    border-radius: $border-radius;
+  }
+}
+
+/* display flex utils */
+.flex {
+  display: flex;
+
+  &.space-between {
+    justify-content: space-between;
+  }
+  &.align-center {
+    align-items: center;
+  }
+}
+
 // Not in use
 
 .clearfix:before,
