@@ -1,5 +1,8 @@
 @import "variables";
 
+/* Colors */
+.secondary { color: $color-dark-gray; }
+
 /* Header */
 .header {
   &-brand {
@@ -77,10 +80,12 @@
   }
 }
 
-.text-align-y {
-  display: flex;
-  align-items: center;
-}
+.align-items-center { align-items: center; }
+
+.text-right { text-align: right; }
+
+.block        { display: block !important; }
+.inline-block { display: inline-block !important; }
 
 /* Columns */
 @for $i from 1 to 8 {
@@ -97,9 +102,11 @@
 /* Borders */
 .border {
   border-color: $border-color;
-  &-0 { border: 0; }
-  &-top { border-top: $border-weight solid; }
-  &-bottom { border-bottom: $border-weight solid; }
+  &-0             { border: 0; }
+  &-top           { border-top: $border-weight solid; }
+  &-bottom        { border-bottom: $border-weight solid; }
+  &-top-thick     { border-top: $border-weight-thick solid; }
+  &-bottom-thick  { border-bottom: $border-weight-thick solid; }
 }
 
 /* Padding */
@@ -246,6 +253,11 @@ img.image {
     width: $img-width-sm;
     height: $img-height-sm;
     object-fit: cover;
+    border-radius: $border-radius;
+  }
+
+  &-post {
+    width: 100%;
     border-radius: $border-radius;
   }
 }
