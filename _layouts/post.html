@@ -7,13 +7,20 @@ layout: default
       <h1 class="col-4 mb-4">{{ page.title }}</h1>
       <div class="col-2 border-top-thick"></div>
       <div class="my-4 pb-4">
+        {% if page.blurb %}
         <p class="mb-3">{{ page.blurb }}</p>
+        {% endif %}
         <h5 class="secondary">{{ page.date | date: '%d %b %Y' }}</h5>
       </div>
       {% if page.image %}
-      <img class="mb-4 image-post" src="{{ page.image | prepend: site.baseurl }}"></a>
+      <img class="image-post" src="{{ page.image | prepend: site.baseurl }}"></a>
       {% endif %}
-      {{ content }}
+      <div class="flex py-4 my-4">
+        <div class="col-2 py-3 pr-4 border-right">
+          <h4>Contents</h4>
+        </div>
+        <div class="col-6 pl-4">{{ content }}</div>
+      </div>
     </div>
   </div>
 </div>

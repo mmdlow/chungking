@@ -106,6 +106,7 @@
   &-0             { border: 0; }
   &-top           { border-top: $border-weight solid; }
   &-bottom        { border-bottom: $border-weight solid; }
+  &-right         { border-right: $border-weight solid; }
   &-top-thick     { border-top: $border-weight-thick solid; }
   &-bottom-thick  { border-bottom: $border-weight-thick solid; }
 }
