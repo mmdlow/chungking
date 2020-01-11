@@ -4,11 +4,11 @@ layout: default
 <div class="content-wrapper">
   <div class="content mx-auto p-3">
     <div class="py-4">
-      <h1 class="col-4 mb-4 banner-text">{{ page.title }}</h1>
+      <h1 class="col-4 mb-4">{{ page.title }}</h1>
       <div class="col-2 border-top-thick"></div>
       <div class="my-4 pb-4">
         <p class="mb-3">{{ page.blurb }}</p>
-        <h3 class="secondary">{{ page.date | date: '%d %b %Y' }}</h3>
+        <h5 class="secondary">{{ page.date | date: '%d %b %Y' }}</h5>
       </div>
       {% if page.image %}
       <img class="mb-4 image-post" src="{{ page.image | prepend: site.baseurl }}"></a>

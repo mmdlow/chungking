@@ -6,7 +6,7 @@ layout: default
   <div class="banner-background">
     <div class="content mx-auto p-3">
       <div class="py-4">
-        <h1 class="banner-text col-6 py-4">{{ site.title }}</h1>
+        <h1 class="h0 col-6 py-4">{{ site.title }}</h1>
         <p class="pt-3 pb-4 col-3 border-top-thick">{{ site.description }}</p>
       </div>
     </div>
@@ -15,9 +15,9 @@ layout: default
     {% for post in site.posts %}
     <div class="py-4 flex space-between">
       <div>
-        <h1 class="mb-3">
+        <h3 class="mb-3">
           <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h1>
+        </h3>
 
         {% if post.blurb %}
         <p class="mb-3">{{ post.blurb | truncatewords:25 }}</p>

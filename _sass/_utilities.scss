@@ -3,6 +3,9 @@
 /* Colors */
 .secondary { color: $color-dark-gray; }
 
+/* Type */
+.h0 { font-size: $h0-size; }
+
 /* Header */
 .header {
   &-brand {
@@ -55,9 +58,6 @@
 
 /* Banner */
 .banner {
-  &-text {
-    font-size: $font-size * 4 !important;
-  }
 
   &-background {
     background-color: $banner-color;
