@@ -1,155 +1,108 @@
 ---
 layout: post
-title: Houston, we have a problem
-blurb: As far back as I can remember, I always wanted to be a gangster
+title: Markdown Styling Guide 
+blurb: How to style with Markdown in Chungking Theme
 image: '/assets/images/green-trees-by-the-lake-2949717.jpg'
 ---
 
-An h1 header
-============
+This is the first paragraph of the post. Paragraphs are separated by blank lines.
 
-Paragraphs are separated by a blank line.
+This is the second paragraph. Text can be *italic*, **bold**, ~~strikethrough~~, and `monospace`. [Links](/) are underlined. Footnotes appear like so [^1] and so [^2].
 
-2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists
-look like:
+[^1]: Footnote 1 description
+[^2]: Footnote 2 description
 
-  * this one
-  * that one
-  * the other one
+You can create blockquotes like this:
 
-Note that --- not considering the asterisk --- the actual text
-content starts at 4-columns in.
+> Give a man fire and he'll be warm for a day, set a man on fire and he'll be warm the rest of his life.
 
-> Block quotes are
-> written like so.
->
-> They can span multiple paragraphs,
-> if you like.
+# h1 heading
 
-Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., "it's all
-in chapters 12--14"). Three dots ... will be converted to an ellipsis.
-Unicode is supported. ☺
+First paragraph following a h1 heading. By default, headings appear in the content list on the left of the post.
 
+## h2 heading
 
+First paragraph following a h2 heading.
 
-An h2 header
-------------
+### h3 heading
 
-Here's a numbered list:
+First paragraph following a h3 heading.
 
- 1. first item
- 2. second item
- 3. third item
+#### h4 heading
 
-Note again how the actual text starts at 4 columns in (4 characters
-from the left side). Here's a code sample:
+First paragraph following a h4 heading.
 
-    # Let me re-iterate ...
-    for i in 1 .. 10 { do-something(i) }
+##### h5 heading
 
-As you probably guessed, indented 4 spaces. By the way, instead of
-indenting the block, you can use delimited blocks, if you like:
+First paragraph following a h5 heading.
 
-~~~
-define foobar() {
-    print "Welcome to flavor country!";
-}
-~~~
+###### h6 heading
 
-(which makes copying & pasting easier). You can optionally mark the
-delimited block for Pandoc to syntax highlight it:
+An ordered list:
 
-~~~python
-import time
-# Quick, count to ten!
-for i in range(10):
-    # (but not *too* quick)
-    time.sleep(0.5)
-    print i
-~~~
+1. Frankly my dear
+2. I don't give
+3. a damn
 
+An unordered list:
 
+- I'm gonna make him
+- an offer
+- he can't refuse
 
-### An h3 header ###
+A nested list:
 
-Now a nested list:
+- Surely
+  - you can't
+  - be serious
+- I am serious
+  - and don't call me
+  - Shirley
 
- 1. First, get these ingredients:
+Another nested list:
 
-      * carrots
-      * celery
-      * lentils
+1. I've had it with these
+   1. monkey-fighting
+   2. snakes
+2. On this
+  - monday to friday
+  - plane
 
- 2. Boil some water.
+Definition lists:
 
- 3. Dump everything in the pot and follow
-    this algorithm:
+Bond
+: James Bond
 
-        find wooden spoon
-        uncover pot
-        stir
-        cover pot
-        balance wooden spoon precariously on pot handle
-        wait 10 minutes
-        goto first step (or shut off burner when done)
+Royale with cheese
+: How they call a cheeseburger in France
 
-    Do not bump wooden spoon or it will fall.
+Markdown tables look like this:
 
-Notice again how text always lines up on 4-space indents (including
-that last line which continues item 3 above).
+| Film                 | Director     | Year |
+| -------------------- | ------------ | ---- |
+| In the mood for love | Wong Kar Wai | 2000 |
+| His Girl Friday      | Howard Hawks | 1940 |
+| Tokyo Story          | Yasujiro Ozu | 1953 |
 
-Here's a link to [a website](http://foo.bar), to a [local
-doc](local-doc.html), and to a [section heading in the current
-doc](#an-h2-header). Here's a footnote [^1].
+A horizontal rule:
 
-[^1]: Footnote text goes here.
+---
 
-Tables can look like this:
+Code blocks look like this:
 
-| size | material    | color       |
-| ---- | ----------- | ----------- |
-| 9    | leather     | brown       |
-| 10   | hemp canvas | natural     |
-| 11   | glass       | transparent |
+```
+This is what happens when you find a stranger in the alps.
+```
 
-Table: Shoes, their sizes, and what they're made of
+Long single-line code blocks scroll horizontally instead of wrapping.
 
-(The above is the caption for the table.) Pandoc also supports
-multi-line tables:
+```
+Let me tell you something pendejo. You pull any of your crazy shit with us. You flash your piece out on the lanes. I'll take it away from you, stick up your ass and pull the fucking trigger 'til it goes click.
+```
 
-| keyword | text                                                       |
-| ------- | ---------------------------------------------------------- |
-| red     | Sunsets, apples, and other red or reddish things.          |
-| green   | Leaves, grass, frogs and other things it's not easy being. |
+Last but not least, images:
 
-A horizontal rule follows.
+![small](/assets/images/flower-in-glass-jar.jpg)
+![large](/assets/images/flower-in-glass-jar-large.jpg)
 
-***
-
-Here's a definition list:
-
-apples
-  : Good for making applesauce.
-
-oranges
-  : Citrus!
-
-tomatoes
-  : There's no "e" in tomatoe.
-
-Again, text is indented 4 spaces. (Put a blank line between each
-term/definition pair to spread things out more.)
-
-Here's a "line block":
-
-| Line one
-|   Line too
-| Line tree
-
-Inline math equations go in like so: $\omega = d\phi / dt$. Display
-math should get its own line and be put in in double-dollarsigns:
-
-$$I = \int \rho R^{2} dV$$
-
-And note that you can backslash-escape any punctuation characters
-which you wish to be displayed literally, ex.: \`foo\`, \*bar\*, etc.
+fin.
