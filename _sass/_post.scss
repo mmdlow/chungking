@@ -1,0 +1,86 @@
+.post {
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+
+  @for $i from 1 to 6 {
+    h#{$i}:first-child {
+      margin-top: 0 !important;
+    }
+  }
+
+  p, ol, ul, table, dl {
+    font-size: $post-font-size;
+    margin-bottom: 1.5em;
+  }
+
+  ol, ul {
+    padding-left: $space-4;
+  }
+
+  li {
+    margin-bottom: 0.5em;
+
+    ol li, ol li {
+      margin-bottom: 0;
+    }
+  }
+
+  blockquote {
+    padding-left: 20px;
+    margin: $space-4 0;
+    border-left: $border-weight * 2 solid $color-dark-gray;
+    font-style: italic;
+
+    p {
+      font-size: $post-font-size * 1.2;
+      margin-bottom: 1em;
+    }
+  }
+
+  hr {
+    margin: 1em 0;
+    color: $color-black;
+    border-width: thin;
+    border-style: solid;
+  }
+
+  table {
+    border-collapse: collapse;
+    display: block;
+    width: 100%;
+    overflow: auto;
+    word-break: break-word;
+
+    th {
+      text-align: left;
+    }
+
+    th, td {
+      padding: $space-2 $space-3 $space-2 0;
+      border-top: thin solid $color-black;
+      border-bottom: thin solid $color-black;
+    }
+
+    tr th {
+      border-top: medium solid $color-black;
+      border-bottom: medium solid $color-black;
+    }
+  }
+
+  dt {
+    font-weight: bold;
+  }
+
+  dt, dd {
+    font-style: italic;
+    font-size: $font-size;
+    margin-bottom: 0.5em;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
