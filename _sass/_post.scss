@@ -83,4 +83,13 @@
   img {
     max-width: 100%;
   }
+
+  pre {
+    margin: 1.5em 0;
+    padding: $space-2 $space-3;
+    border: thin solid $color-black;
+    border-radius: $border-radius;
+    width: 100%;
+    overflow-x: auto;
+  }
 }
