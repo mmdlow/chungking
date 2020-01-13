@@ -94,6 +94,17 @@ Code blocks look like this:
 This is what happens when you find a stranger in the alps.
 ```
 
+Syntax highlighting is also supported.
+
+```java
+// java
+
+String quote = "may the force be with you";
+for (String s : quote.split(" ")) {
+  System.out.println(s);
+}
+```
+
 Long single-line code blocks scroll horizontally instead of wrapping.
 
 ```
