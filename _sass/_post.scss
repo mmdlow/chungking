@@ -114,6 +114,10 @@
     overflow-x: auto;
   }
 
+  code {
+    font-family: $font-family-mono;
+  }
+
   .footnotes {
     padding-top: space-4;
     border-top: thin solid $color-black;
