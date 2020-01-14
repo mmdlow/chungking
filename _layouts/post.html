@@ -16,11 +16,25 @@ layout: default
       <img class="image-post" src="{{ page.image | prepend: site.baseurl }}"></a>
       {% endif %}
       <div class="flex py-4 my-4">
-        <div class="col-2 py-3 pr-4 border-right">
-          <h4>Contents</h4>
+        <div class="col-2 pr-4 border-right">
+          <div class="toc">
+            <h4 class="pb-3 toc-title">Contents</h4>
+            <div class="contents"></div>
+          </div>
         </div>
         <div class="col-6 pl-4 post">{{ content }}</div>
       </div>
     </div>
   </div>
 </div>
+
+<script src="https://unpkg.com/scrollnav@3.0.1/dist/scrollnav.min.umd.js"></script>
+<script>
+  const content = document.querySelector(".post");
+  scrollnav.init(content, {
+    debug: false,
+    sections: "h1",
+    subSections: "h2, h3, h4, h5, h6",
+    insertTarget: document.querySelector(".contents")
+  })
+</script>

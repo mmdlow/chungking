@@ -1,3 +1,45 @@
+.toc {
+  position: sticky;
+  top: $space-4;
+
+  .scroll-nav {
+
+    .scroll-nav__item {
+      padding-left: $space-3;
+      font-size: $post-font-size;
+    }
+
+    .scroll-nav__sub-item {
+      font-size: $font-size;
+    }
+
+    .scroll-nav__item, .scroll-nav__sub-item {
+
+      &--active::before {
+        left: 0;
+        border-left: $border-weight * 2 solid $color-black;
+        content: "";
+        display: block;
+        position: absolute;
+        height: 1em;
+      }
+    }
+
+    li {
+      margin-bottom: 1em;
+      list-style-type: none;
+
+      ol {
+        margin-top: 1em;
+
+        li {
+          margin-bottom: 0.5em;
+        }
+      }
+    }
+  }
+}
+
 .post {
 
   h1 { margin: 0.67em 0; }
