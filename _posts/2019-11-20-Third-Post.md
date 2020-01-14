@@ -19,7 +19,7 @@ You can create blockquotes like this:
 
 # h1 heading
 
-First paragraph following a h1 heading. By default, headings appear in the content list on the left of the post.
+First paragraph following a h1 heading. Headings will appear in the table of contents on the left of the post if `toc: true` is specified in the post [front matter](https://jekyllrb.com/docs/front-matter/).
 
 ## h2 heading
 
