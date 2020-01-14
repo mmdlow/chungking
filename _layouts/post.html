@@ -17,10 +17,12 @@ layout: default
       {% endif %}
       <div class="flex py-4 my-4">
         <div class="col-2 pr-4 border-right">
+          {% if page.toc %}
           <div class="toc">
             <h4 class="pb-3 toc-title">Contents</h4>
             <div class="contents"></div>
           </div>
+          {% endif %}
         </div>
         <div class="col-6 pl-4 post">{{ content }}</div>
       </div>
