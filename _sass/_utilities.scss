@@ -83,6 +83,8 @@
 
 .align-items-center { align-items: center; }
 
+.justify-space-between { justify-content: space-between; }
+
 .text-right { text-align: right; }
 
 .block        { display: block !important; }
@@ -106,9 +108,12 @@
   &-0             { border: 0; }
   &-top           { border-top: $border-weight solid; }
   &-bottom        { border-bottom: $border-weight solid; }
+  &-left          { border-left: $border-weight solid; }
   &-right         { border-right: $border-weight solid; }
   &-top-thick     { border-top: $border-weight-thick solid; }
   &-bottom-thick  { border-bottom: $border-weight-thick solid; }
+  &-left-thick    { border-left: $border-weight-thick solid; }
+  &-right-thick   { border-right: $border-weight-thick solid; }
 }
 
 /* Padding */
