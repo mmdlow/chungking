@@ -12,7 +12,7 @@ layout: default
     </div>
   </div>
   <div class="content mx-auto p-3">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
     <div class="py-4 flex space-between">
       <div>
         <h3 class="mb-3">
@@ -34,5 +34,31 @@ layout: default
         {% endif %}</div>
     </div>
     {% endfor %}
+
+    {% if paginator.total_pages > 1 %}
+    <div class="mt-4 flex space-between">
+      {% if paginator.previous_page %}
+      <div class="border-left-thick">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">
+          <h5 class="ml-3">newer posts</h5>
+        </a>
+      </div>
+      {% else %}
+      <div class="col-1"></div>
+      {% endif %}
+
+      <h5>page {{ paginator.page }} of {{ paginator.total_pages }}</h5>
+
+      {% if paginator.next_page %}
+      <div class="border-right-thick text-right">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">
+          <h5 class="mr-3">older posts</h5>
+        </a>
+      </div>
+      {% else %}
+      <div class="col-1"></div>
+      {% endif %}
+    </div>
+    {% endif %}
   </div>
 </div>

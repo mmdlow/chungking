@@ -17,6 +17,11 @@ instagram: ""
 facebook: ""
 twitter: ""
 
+# Plugins
+plugins:
+  - jekyll-paginate
+
 # Build settings
 markdown: kramdown
 highlighter: rouge
+paginate: 10
