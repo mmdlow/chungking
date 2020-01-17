@@ -42,6 +42,19 @@
   &-nav {
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    transition: transform 300ms ease 0s;
+    z-index: 100;
+
+    &.hide {
+      transform: translateY(-100%);
+    }
+
+    &.reveal {
+      transform: none;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px 0px;
+    }
   }
 }
 
@@ -54,6 +67,8 @@
   &-nav {
     display: flex;
     justify-content: space-between;
+    top: $header-height;
+    position: relative;
   }
 }
 
@@ -78,6 +93,8 @@
 
   &-wrapper {
     min-height: calc(100vh - 151px);
+    top: $header-height;
+    position: relative;
   }
 }
 

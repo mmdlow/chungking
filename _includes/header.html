@@ -7,3 +7,24 @@
     <a class="header-link mr-2 ml-lg-2 mr-lg-0" href="#">Posts</a>
   </div>
 </header>
+
+<script>
+  const header = document.querySelector("header");
+  let lastScroll = 0;
+
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll == 0) {
+      header.classList.remove("reveal");
+      return;
+    }
+    if (currentScroll > lastScroll && !header.classList.contains("hide")) {
+      header.classList.remove("reveal");
+      header.classList.add("hide");
+    } else if (currentScroll < lastScroll && header.classList.contains("hide")) {
+      header.classList.remove("hide");
+      header.classList.add("reveal");
+    }
+    lastScroll = currentScroll;
+  })
+</script>
