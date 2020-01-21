@@ -1,6 +1,8 @@
 .toc {
   position: sticky;
-  top: $space-4;
+  top: $space-4 * 2;
+  overflow-y: scroll;
+  max-height: calc(100vh - 152px);
 
   .scroll-nav {
 
@@ -108,7 +110,7 @@
     display: block;
     width: 100%;
     overflow: auto;
-    word-break: break-word;
+    word-break: keep-all;
 
     th {
       text-align: left;
@@ -148,6 +150,7 @@
   }
 
   pre {
+    font-size: $font-size;
     margin: 1.5em 0;
     padding: $space-2 $space-3;
     border: thin solid $color-black;
