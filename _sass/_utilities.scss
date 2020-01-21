@@ -28,6 +28,8 @@
       background: $color-black;
       transition: width 0.3s ease 0s;
       width: 0;
+      position: relative;
+      top: $space-1;
     }
 
     &:hover:after {
