@@ -21,6 +21,9 @@ twitter: ""
 plugins:
   - jekyll-paginate
 
+include:
+  - _pages
+
 # Build settings
 markdown: kramdown
 highlighter: rouge
