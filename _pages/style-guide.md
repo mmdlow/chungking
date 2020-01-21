@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: page
 title: Markdown Styling Guide 
-blurb: How to style with Markdown in Chungking Theme
 image: '/assets/images/green-trees-by-the-lake-2949717.jpg'
 toc: true
+permalink: /style-guide/
 ---
 
 This is the first paragraph of the post. Paragraphs are separated by blank lines.
