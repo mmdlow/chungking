@@ -37,17 +37,12 @@
     }
   }
 
-  &-background {
-    background-color: $header-color;
-  }
-
   &-nav {
-    display: flex;
-    justify-content: space-between;
     position: fixed;
     width: 100%;
     transition: transform 300ms ease 0s;
     z-index: 100;
+    background-color: $header-color;
 
     &.hide {
       transform: translateY(-100%);
