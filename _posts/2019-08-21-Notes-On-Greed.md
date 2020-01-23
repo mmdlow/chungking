@@ -4,6 +4,7 @@ title: Notes on Greed (1924)
 blurb: Naturalism & Erich Von Stroheim's Use of Misce-en-Scene
 image: '/assets/images/greed-cover.jpg'
 toc: true
+featured: true
 ---
 
 # A. Narrative

@@ -3,14 +3,7 @@ layout: default
 ---
 
 <div class="content-wrapper">
-  <div class="banner-background">
-    <div class="content mx-auto p-3">
-      <div class="py-4">
-        <h1 class="h0 col-6 py-4">{{ site.title }}</h1>
-        <p class="pt-3 pb-4 col-3 border-top-thick">{{ site.description }}</p>
-      </div>
-    </div>
-  </div>
+  {% include carousel.html %}
   <div class="content mx-auto p-3">
     {% for post in paginator.posts %}
     <div class="py-4 flex space-between">

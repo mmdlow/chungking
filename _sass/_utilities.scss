@@ -77,6 +77,40 @@
   }
 }
 
+/* Carousel */
+.carousel {
+  height: 100%;
+
+  &-card {
+    border-radius: $border-radius;
+    background-color: $banner-color;
+    background-size: cover;
+    opacity: 0;
+    z-index: 1;
+    max-height: $carousel-height;
+    position: absolute;
+    top: 0;
+
+    &.active {
+      opacity: 1;
+      z-index: 2;
+      top: 0;
+      position: relative;
+    }
+  }
+
+  &-navigation {
+    z-index: 3;
+    position: relative;
+    width: 100%;
+    top: -$space-4 * 1.5;
+  }
+
+  &-btn {
+    cursor: pointer;
+  }
+}
+
 /* Layout */
 @media (max-width: $breakpoint-lg) {
   .width-sm-stretch {

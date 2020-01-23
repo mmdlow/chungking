@@ -1,0 +1,52 @@
+<div class="content mx-auto p-3 carousel">
+  {% assign featured_posts = site.posts | where: "featured", true %}
+
+  {% for post in featured_posts %}
+  {% if forloop.first %}
+  <div class="py-2 px-4 carousel-card active"
+    style="background-image: url('{{ post.image | prepend: site.baseurl }}');">
+    <h1 class="col-5 py-4">{{ post.title }}</h1>
+    <div class="col-2 border-top-thick"></div>
+    <h5 class="py-4 mb-4 secondary">{{ post.date | date: '%d %b %Y' }}</h5>
+  </div>
+  {% else %}
+  <div class="py-2 px-4 carousel-card" style="background-image: url('{{ post.image | prepend: site.baseurl }}');">
+    <h1 class="col-5 py-4">{{ post.title }}</h1>
+    <div class="col-2 border-top-thick"></div>
+    <h5 class="py-4 mb-4 secondary">{{ post.date | date: '%d %b %Y' }}</h5>
+  </div>
+  {% endif %}
+  {% endfor %}
+
+  {% if featured_posts.size > 1 %}
+  <div class="px-4 flex space-between carousel-navigation">
+    <div class="col-3 carousel-btn btn-prev border-left-thick">
+      <h5 class="ml-3">Previous</h5>
+    </div>
+    <div class="col-3 carousel-btn btn-next border-right-thick text-right">
+      <h5 class="mr-3">Next</h5>
+    </div>
+  </div>
+  {% endif %}
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const prevBtn = document.querySelector(".carousel-btn.btn-prev");
+    const nextBtn = document.querySelector(".carousel-btn.btn-next");
+    let cards = document.querySelectorAll(".carousel-card");
+    let current = 0;
+
+    prevBtn.addEventListener("click", () => {
+      cards[current].className = "py-2 px-4 carousel-card";
+      current = ((current - 1) % cards.length + cards.length) % cards.length;
+      cards[current].className = "py-2 px-4 carousel-card active";
+    });
+
+    nextBtn.addEventListener("click", () => {
+      cards[current].className = "py-2 px-4 carousel-card";
+      current = (current + 1) % cards.length;
+      cards[current].className = "py-2 px-4 carousel-card active";
+    })
+  })
+</script>
