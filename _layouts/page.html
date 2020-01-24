@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <div class="content-wrapper">
   <div class="content mx-auto p-3">
     <div class="py-4">
@@ -13,14 +12,7 @@ layout: default
       {% endif %}
 
       <div class="flex py-4 my-4">
-        <div class="col-2">
-          {% if page.toc %}
-          <div class="toc pr-2">
-            <h4 class="pb-3 toc-title">Contents</h4>
-            <div class="contents"></div>
-          </div>
-          {% endif %}
-        </div>
+        {% include toc.html %}
         <div class="col-6 px-3 width-lg-stretch border-left">
           <div class="post">{{ content }}</div>
         </div>
@@ -28,6 +20,3 @@ layout: default
     </div>
   </div>
 </div>
-
-<script src="https://unpkg.com/scrollnav@3.0.1/dist/scrollnav.min.umd.js"></script>
-<script src="{{ site.baseurl }}/js/contentbar.js"></script>
