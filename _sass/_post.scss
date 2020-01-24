@@ -3,8 +3,12 @@
 .toc {
   position: sticky;
   top: $space-4 * 2;
-  overflow-y: scroll;
+  overflow-y: auto;
   max-height: calc(100vh - #{$content-height-offset});
+
+  @media(max-width: $breakpoint-lg) {
+    display: none;
+  }
 
   .scroll-nav {
 
@@ -70,6 +74,10 @@
   p, ol, ul, table, dl {
     font-size: $post-font-size;
     margin-bottom: 1.5em;
+
+    @media(max-width: $breakpoint-lg) {
+      font-size: $font-size;
+    }
   }
 
   ol, ul {
