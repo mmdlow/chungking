@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I'm sorry Dave, I can't do that
-image: '/assets/images/portrait-photo-of-man-s-face-2599039.jpg'
+image: "/assets/images/portrait-photo-of-man-s-face-2599039.jpg"
 featured: true
 toc: true
 ---
@@ -26,5 +26,7 @@ Netus et malesuada fames ac. Aliquam nulla facilisi cras fermentum odio eu feugi
 Amet venenatis urna cursus eget nunc scelerisque viverra mauris in. Pretium fusce id velit ut tortor pretium viverra. Feugiat in ante metus dictum at tempor commodo. Pretium viverra suspendisse potenti nullam. Aliquet lectus proin nibh nisl condimentum id venenatis a.
 
 # Here's Johnny
+
+![](/assets/images/green-trees-by-the-lake-2949717.jpg)
 
 Suscipit tellus mauris a diam maecenas. Fames ac turpis egestas sed tempus urna. Massa placerat duis ultricies lacus sed turpis tincidunt id aliquet. Ut enim blandit volutpat maecenas volutpat blandit aliquam. Adipiscing vitae proin sagittis nisl. Quam nulla porttitor massa id neque aliquam vestibulum.

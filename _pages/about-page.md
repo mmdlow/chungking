@@ -2,7 +2,6 @@
 layout: page
 title: About
 permalink: /about/
-image: '/assets/images/green-trees-by-the-lake-2949717.jpg'
 toc: false
 ---
 
@@ -33,7 +32,7 @@ Possible front matter configuration for posts:
 layout: post
 title: My Post
 blurb: A short description of the post. Truncates at 25 words.
-image: /path/to/post/cover/image.jpg 
+image: /path/to/post/cover/image.jpg
 # images typically go in the assets/images folder
 
 featured: true
