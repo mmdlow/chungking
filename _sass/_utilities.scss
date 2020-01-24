@@ -69,26 +69,27 @@
   }
 }
 
-/* Banner */
-.banner {
-
-  &-background {
-    background-color: $banner-color;
-  }
-}
-
 /* Carousel */
 .carousel {
-  height: 100%;
+  max-height: $carousel-height;
   position: relative;
+  color: $color-white;
+
+  a {
+    color: $color-white;
+  }
 
   &-card {
+    border-radius: $border-radius;
+    background-color: rgba($color: $color-black, $alpha: 0.6);
+  }
+
+  &-slide {
     border-radius: $border-radius;
     background-color: $banner-color;
     background-size: cover;
     opacity: 0;
     z-index: 1;
-    max-height: $carousel-height;
     position: absolute;
     top: $space-3;
     left: $space-3;

@@ -3,23 +3,30 @@
 
   {% for post in featured_posts %}
   {% if forloop.first %}
-  <div class="py-2 px-4 carousel-card active"
-    style="background-image: url('{{ post.image | prepend: site.baseurl }}');">
-    <h1 class="col-5 py-4">{{ post.title }}</h1>
-    <div class="col-2 border-top-thick"></div>
-    <h5 class="py-4 mb-4">{{ post.date | date: '%d %b %Y' }}</h5>
+  <div class="carousel-slide active" style="background-image: url('{{ post.image | prepend: site.baseurl }}');">
+    <div class="col-4 p-4 carousel-card">
+      <h2 class="pb-4">
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+      <div class="col-4 border-top-thick"></div>
+      <h6 class="py-4 mb-4">{{ post.date | date: '%d %b %Y' }}</h6>
+    </div>
   </div>
   {% else %}
-  <div class="py-2 px-4 carousel-card" style="background-image: url('{{ post.image | prepend: site.baseurl }}');">
-    <h1 class="col-5 py-4">{{ post.title }}</h1>
-    <div class="col-2 border-top-thick"></div>
-    <h5 class="py-4 mb-4">{{ post.date | date: '%d %b %Y' }}</h5>
+  <div class="carousel-slide" style="background-image: url('{{ post.image | prepend: site.baseurl }}');">
+    <div class="col-4 p-4 carousel-card">
+      <h2 class="pb-4">
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h2>
+      <div class="col-4 border-top-thick"></div>
+      <h6 class="py-4 mb-4">{{ post.date | date: '%d %b %Y' }}</h6>
+    </div>
   </div>
   {% endif %}
   {% endfor %}
 
   {% if featured_posts.size > 1 %}
-  <div class="px-4 flex space-between carousel-navigation">
+  <div class="col-4 px-4 flex space-between carousel-navigation">
     <div class="col-3 carousel-btn btn-prev border-left-thick">
       <h5 class="ml-3">Previous</h5>
     </div>
@@ -34,19 +41,19 @@
   document.addEventListener("DOMContentLoaded", () => {
     const prevBtn = document.querySelector(".carousel-btn.btn-prev");
     const nextBtn = document.querySelector(".carousel-btn.btn-next");
-    let cards = document.querySelectorAll(".carousel-card");
+    let slides = document.querySelectorAll(".carousel-slide");
     let current = 0;
 
     prevBtn.addEventListener("click", () => {
-      cards[current].className = "py-2 px-4 carousel-card";
-      current = ((current - 1) % cards.length + cards.length) % cards.length;
-      cards[current].className = "py-2 px-4 carousel-card active";
+      slides[current].className = "carousel-slide";
+      current = ((current - 1) % slides.length + slides.length) % slides.length;
+      slides[current].className = "carousel-slide active";
     });
 
     nextBtn.addEventListener("click", () => {
-      cards[current].className = "py-2 px-4 carousel-card";
-      current = (current + 1) % cards.length;
-      cards[current].className = "py-2 px-4 carousel-card active";
-    })
-  })
+      slides[current].className = "carousel-slide";
+      current = (current + 1) % slides.length;
+      slides[current].className = "carousel-slide active";
+    });
+  });
 </script>
