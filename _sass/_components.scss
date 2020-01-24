@@ -45,6 +45,25 @@
       transform: none;
       border-bottom: $border-weight solid $color-black;
     }
+
+    .header-menu-btn {
+      display: none;
+      cursor: pointer;
+    }
+
+    @media(max-width: $breakpoint-lg) {
+      .header-menu-lg-stretch {
+        display: none;
+
+        &.reveal {
+          display: block;
+        }
+      }
+
+      .header-menu-btn {
+        display: block;
+      }
+    }
   }
 }
 
