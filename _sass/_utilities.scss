@@ -32,6 +32,8 @@
 .block        { display: block !important; }
 .inline-block { display: inline-block !important; }
 
+.full-width { width: 100%; }
+
 /* Columns */
 @for $i from 1 to 8 {
   .col-#{$i} {

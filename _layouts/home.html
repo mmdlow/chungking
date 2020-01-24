@@ -6,24 +6,25 @@ layout: default
   {% include carousel.html %}
   <div class="content mx-auto p-3">
     {% for post in paginator.posts %}
-    <div class="py-4 flex space-between">
-      <div>
+    <div class="width-lg-stretch py-4 flex space-between postcard">
+      <div class="full-width">
         <h3 class="mb-3">
           <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h3>
+        <div class="my-2 col-1 border-bottom-thick"></div>
 
         {% if post.blurb %}
-        <p class="mb-3">{{ post.blurb | truncatewords:25 }}</p>
+        <p class="my-3">{{ post.blurb | truncatewords:25 }}</p>
         {% else %}
-        <p class="mb-3">{{ post.content | strip_html | truncatewords:40 }}</p>
+        <p class="my-3">{{ post.content | strip_html | truncatewords:40 }}</p>
         {% endif %}
 
         <span class="mb-3 bold secondary">{{ post.date | date: '%d %b %Y' }}</span>
       </div>
-      <div class="pl-2 flex align-center">
+      <div class="mr-2 ml-lg-2 mr-lg-0 flex align-center">
         {% if post.image %}
         <a href="{{ post.url | prepend: site.baseurl }}">
-          <img class="image-thumbnail" src="{{ post.image | prepend: site.baseurl }}"></a>
+          <img class="image-thumbnail image-lg-stretch" src="{{ post.image | prepend: site.baseurl }}"></a>
         {% endif %}</div>
     </div>
     {% endfor %}
