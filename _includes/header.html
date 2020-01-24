@@ -7,8 +7,11 @@
       </a>
     </div>
     <div class="my-2 header-menu-lg-stretch">
-      <a class="header-link mr-2 ml-lg-2 mr-lg-0" href="{{ site.baseurl }}/about">About</a>
-      <a class="header-link mr-2 ml-lg-2 mr-lg-0" href="{{ site.baseurl }}/style-guide">Style Guide</a>
+      {% for page in site.pages %}
+      {% unless page.title == 'Home' %}
+      <a class="header-link mr-2 ml-lg-2 mr-lg-0" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      {% endunless %}
+      {% endfor %}
     </div>
   </div>
 </header>

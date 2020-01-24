@@ -1,7 +1,6 @@
 ---
 layout: page
-title: Markdown Styling Guide 
-image: '/assets/images/green-trees-by-the-lake-2949717.jpg'
+title: Style Guide 
 toc: true
 permalink: /style-guide/
 ---
