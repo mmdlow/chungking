@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const content = document.querySelector(".post");
+  const content = document.querySelector(".prose");
   scrollnav.init(content, {
     debug: false,
     sections: "h1",
