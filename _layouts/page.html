@@ -1,5 +1,22 @@
 ---
 layout: default
 ---
+<div class="content-wrapper">
+  <div class="content mx-auto p-3">
+    <div class="py-4">
+      <h1 class="col-4 mb-4">{{ page.title }}</h1>
+      <div class="col-2 mb-4 pb-4 border-top-thick"></div>
 
-{{ content }}
+      {% if page.image %}
+      <img class="image-post" src="{{ page.image | prepend: site.baseurl }}"></a>
+      {% endif %}
+
+      <div class="flex py-4 my-4">
+        {% include toc.html %}
+        <div class="col-6 px-3 width-lg-stretch border-left">
+          <div class="prose">{{ content }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

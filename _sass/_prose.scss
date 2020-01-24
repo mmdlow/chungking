@@ -1,0 +1,147 @@
+@import "variables";
+
+.prose {
+
+  h1 { margin: 0.67em 0; }
+  h2 { margin: 0.83em 0; }
+  h3 { margin: 1.17em 0; }
+  h4 { margin: 1.33em 0; }
+  h5 { margin: 1.67em 0; }
+  h6 { margin: 2.33em 0; } 
+
+  @for $i from 1 to 6 {
+    h#{$i}:first-child {
+      margin-top: 0 !important;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      color: $color-dark-gray;
+    }
+  }
+
+  p, ol, ul, table, dl {
+    font-size: $post-font-size;
+    line-height: 1.5;
+    margin-bottom: 1.5em;
+
+    @media(max-width: $breakpoint-lg) {
+      font-size: $font-size;
+    }
+  }
+
+  ol, ul {
+    padding-left: $space-4;
+  }
+
+  li {
+    margin-bottom: 0.5em;
+
+    ol, ul {
+      margin-top: 0.5em;
+    }
+
+    ol li, ul li {
+      margin-bottom: 0;
+    }
+  }
+
+  blockquote {
+    padding-left: 20px;
+    margin: $space-4 0;
+    border-left: $border-weight * 2 solid $color-dark-gray;
+    font-style: italic;
+
+    p {
+      font-size: $post-font-size * 1.2;
+      margin-bottom: 1em;
+    }
+  }
+
+  hr {
+    margin: 1em 0;
+    color: $color-black;
+    border-width: thin;
+    border-style: solid;
+  }
+
+  table {
+    border-collapse: collapse;
+    display: block;
+    width: 100%;
+    overflow: auto;
+    word-break: keep-all;
+
+    th {
+      text-align: left;
+    }
+
+    td {
+      font-size: $font-size;
+    }
+
+    th, td {
+      padding: $space-2 $space-4 $space-2 0;
+      border-top: thin solid $color-black;
+      border-bottom: thin solid $color-black;
+    }
+
+    tr th {
+      border-top: medium solid $color-black;
+      border-bottom: medium solid $color-black;
+    }
+  }
+
+  dt {
+    font-weight: bold;
+  }
+
+  dd {
+    font-style: italic;
+  }
+
+  dt, dd {
+    font-size: $font-size;
+    margin-bottom: 0.5em;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  pre {
+    font-size: $font-size;
+    margin: 1.5em 0;
+    padding: $space-2 $space-3;
+    border: thin solid $color-black;
+    border-radius: $border-radius;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  code {
+    font-family: $font-family-mono;
+  }
+
+  .footnotes {
+    padding-top: space-4;
+    border-top: thin solid $color-black;
+    color: $color-dark-gray;
+
+    ol, p, a {
+      font-size: $font-size !important;
+    }
+
+    ol {
+      margin-top: 1.5em;
+      margin-bottom: 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}

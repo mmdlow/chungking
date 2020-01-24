@@ -1,24 +1,41 @@
 /* Font */
 $font-family-sans-serif: "Helvetica Neue", "Archivo", Arial, sans-serif;
-$font-family-serif: "Libre Baskerville", serif;
-$font-family-mono: "Inconsolata", "Consolas", monospace;
+$font-family-mono: "Anonymous Pro", "Consolas", monospace;
 $font-size: 16px;
+$font-size-sm: 12px;
+
+$post-font-size: 20px;
+
+$h1-size: 64px;
+$h2-size: 48px;
+$h3-size: 32px;
+$h4-size: 24px;
+$h5-size: 18px;
+$h6-size: 14px;
 
 /* Colors */
 $color-black: black;
 $color-dark-gray: #666666;
 $color-light-gray: #cccccc;
+$color-lighter-gray: #eeeeee;
 $color-white: white;
 
 $header-color: $color-white;
 
 $banner-color: $color-light-gray;
+$carousel-height: 400px;
 
 $border-color: $color-black;
-$border-weight: 2px;
+$border-weight: 3px;
+$border-weight-thick: 10px;
+$border-radius: 5px;
 
 /* Typical sizes */
 $content-width: 1024px;
+$content-height-offset: 152px;
+
+$img-width-sm: 208px;
+$img-height-sm: 150px;
 
 /* Breakpoints */
 $breakpoint-sm: 576px;
@@ -31,3 +48,8 @@ $space-1: $base-space !default;
 $space-2: ($base-space * 2) !default;
 $space-3: ($base-space * 4) !default;
 $space-4: ($base-space * 8) !default;
+
+$header-height: 64px;
+
+/* Transition time */
+$transition-time: 0.3s;

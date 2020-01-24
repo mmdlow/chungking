@@ -1,31 +1,58 @@
-<!DOCTYPE html>
-<html>
-{% include head.html %}
+---
+layout: default
+---
 
-<body>
-  <header class="width-sm-stretch px-3 py-2 header-nav header-background">
-    <div class="my-2">
-      <span class="header-brand">{{ site.title }}</span>
-    </div>
-    <div class="my-2">
-      <a class="header-link mr-2 ml-lg-2 mr-lg-0" href="#">About</a>
-      <a class="header-link mr-2 ml-lg-2 mr-lg-0" href="#">Posts</a>
-    </div>
-  </header>
-  <div class="banner-background">
-    <div class="content mx-auto p-3">
-      <div class="py-4">
-        <h1 class="banner-text col-6 py-4">{{ site.title }}</h1>
-        <p class="pt-3 pb-4 col-3 border-top">{{ site.description }}</p>
-      </div>
-    </div>
-  </div>
+<div class="content-wrapper">
+  {% include carousel.html %}
   <div class="content mx-auto p-3">
-    <div class="py-4">
-      <h1>Latest</h1>
+    {% for post in paginator.posts %}
+    <div class="width-lg-stretch py-4 flex space-between postcard">
+      <div class="full-width">
+        <h3 class="mb-3">
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h3>
+        <div class="my-2 col-1 border-bottom-thick"></div>
+
+        {% if post.blurb %}
+        <p class="my-3">{{ post.blurb | truncatewords:25 }}</p>
+        {% else %}
+        <p class="my-3">{{ post.content | strip_html | truncatewords:40 }}</p>
+        {% endif %}
+
+        <span class="mb-3 bold secondary">{{ post.date | date: '%d %b %Y' }}</span>
+      </div>
+      <div class="mr-2 ml-lg-2 mr-lg-0 flex align-center">
+        {% if post.image %}
+        <a href="{{ post.url | prepend: site.baseurl }}">
+          <img class="image-thumbnail image-lg-stretch" src="{{ post.image | prepend: site.baseurl }}"></a>
+        {% endif %}</div>
     </div>
+    {% endfor %}
+
+    {% if paginator.total_pages > 1 %}
+    <div class="mt-4 flex space-between">
+      {% if paginator.previous_page %}
+      <div class="border-left-thick">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">
+          <h5 class="ml-3">newer posts</h5>
+        </a>
+      </div>
+      {% else %}
+      <div class="col-1"></div>
+      {% endif %}
+
+      <h5>page {{ paginator.page }} of {{ paginator.total_pages }}</h5>
+
+      {% if paginator.next_page %}
+      <div class="border-right-thick text-right">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">
+          <h5 class="mr-3">older posts</h5>
+        </a>
+      </div>
+      {% else %}
+      <div class="col-1"></div>
+      {% endif %}
+    </div>
+    {% endif %}
   </div>
-
-</body>
-
-</html>
+</div>

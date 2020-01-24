@@ -1,0 +1,19 @@
+<header class="py-2 header-nav">
+  <div class="width-lg-stretch px-3 content mx-auto flex space-between">
+    <div class="my-2 flex space-between">
+      <a class="header-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+      <a class="header-menu-btn">
+        <div data-icon="ei-navicon" data-size="s"></div>
+      </a>
+    </div>
+    <div class="my-2 header-menu-lg-stretch">
+      {% for page in site.pages %}
+      {% unless page.title == 'Home' %}
+      <a class="header-link mr-2 ml-lg-2 mr-lg-0" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      {% endunless %}
+      {% endfor %}
+    </div>
+  </div>
+</header>
+
+<script src="{{ site.baseurl }}/assets/js/header.js"></script>

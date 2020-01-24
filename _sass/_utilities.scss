@@ -1,52 +1,15 @@
 @import "variables";
 
-/* Header */
-.header {
-  &-brand {
-    font-weight: bold !important;
-    color: $color-dark-gray;
-  }
+/* Colors */
+.secondary { color: $color-dark-gray; }
 
-  &-link {
-    font-weight: bold !important;
-    color: $color-black;
-    text-decoration: none !important;
-    display: inline-block;
-
-    &:after {
-      content: "";
-      display: block;
-      margin: 0 auto;
-      height: $border-weight;
-      background: $color-black;
-      transition: width 0.3s ease 0s;
-      width: 0;
-    }
-
-    &:hover:after {
-      width: 100%;
-    }
-  }
-
-  &-background {
-    background-color: $header-color;
-  }
-}
-
-/* Banner */
-.banner {
-  &-text {
-    font-size: $font-size * 4 !important;
-  }
-
-  &-background {
-    background-color: $banner-color;
-  }
-}
+/* Type */
+.bold { font-weight: bold;}
+.small { font-size: $font-size-sm; }
 
 /* Layout */
 @media (max-width: $breakpoint-lg) {
-  .width-sm-stretch {
+  .width-lg-stretch {
     display: block !important;
     width: 100% !important;
   }
@@ -54,30 +17,42 @@
 
 .content {
   max-width: $content-width;
+
+  &-wrapper {
+    min-height: calc(100vh - $content-height-offset);
+    top: $header-height;
+    position: relative;
+  }
 }
 
+.align-items-center { align-items: center; }
 
+.text-right { text-align: right; }
+
+.block        { display: block !important; }
+.inline-block { display: inline-block !important; }
+
+.full-width { width: 100%; }
+
+/* Columns */
 @for $i from 1 to 8 {
   .col-#{$i} {
     width: ($i / 8 * 100%);
   }
 }
 
-// Not in use
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table
-}
-.clearfix:after { clear: both }
-
 /* Borders */
-
 .border {
   border-color: $border-color;
-  &-0 { border: 0; }
-  &-top { border-top: $border-weight solid; }
-  &-bottom { border-bottom: $border-weight solid; }
+  &-0             { border: 0; }
+  &-top           { border-top: $border-weight solid; }
+  &-bottom        { border-bottom: $border-weight solid; }
+  &-left          { border-left: $border-weight solid; }
+  &-right         { border-right: $border-weight solid; }
+  &-top-thick     { border-top: $border-weight-thick solid; }
+  &-bottom-thick  { border-bottom: $border-weight-thick solid; }
+  &-left-thick    { border-left: $border-weight-thick solid; }
+  &-right-thick   { border-right: $border-weight-thick solid; }
 }
 
 /* Padding */
@@ -215,5 +190,17 @@
       &-3 { margin-left: $space-3; }
       &-4 { margin-left: $space-4; }
     }
+  }
+}
+
+/* display flex utils */
+.flex {
+  display: flex;
+
+  &.space-between {
+    justify-content: space-between;
+  }
+  &.align-center {
+    align-items: center;
   }
 }
