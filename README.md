@@ -1,11 +1,50 @@
 # chungking
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
+Chungking is a modern, elegant Jekyll theme with a focus on clear yet stylish content delivery. If you're looking to do some heavy blogging or article writing, Chungking is for you.
 
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
+## Features
 
-TODO: Delete this and the text above, and describe your gem
+#### Featured post carousel
 
+Show off the best posts on your site via an image carousel on the main page. Any post with the `featured: true` property set in the front matter will automatically be added to the carousel.
+
+#### Table of contents
+
+For long posts with multiple sections, generate a table of contents corresponding to the markdown headers in your text. It's as simple as setting `toc: true` in your front matter.
+
+#### Mobile-ready
+
+Chungking's responsive design ensures smooth scaling across devices with different screen sizes.
+
+## Configuration
+
+#### Posts
+
+Possible front matter configuration for posts:
+
+```
+---
+layout: post
+title: My Post
+blurb: A short description of the post. Truncates at 25 words.
+image: /path/to/post/cover/image.jpg
+# images typically go in the assets/images folder
+
+featured: true
+# Adds this post to the featured carousel on the home page
+
+toc: true
+# Generates a table of contents for the current post, based on the markdown header # tags in the text
+---
+
+My text...
+```
+
+#### Pages
+
+New pages added in the `_pages` directory are automatically added to the header nav menu.
+
+Page front matter configuration is similar to Post front matter, excluding the `blurb` and `featured` properties.
 
 ## Installation
 
@@ -29,13 +68,9 @@ Or install it yourself as:
 
     $ gem install chungking
 
-## Usage
-
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
-
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on [GitHub](https://github.com/mmdlow/chungking). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 
@@ -49,4 +84,3 @@ To add a custom directory to your theme-gem, please edit the regexp in `chungkin
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
