@@ -6,6 +6,7 @@
 /* Type */
 .h0 { font-size: $h0-size; }
 .bold { font-weight: bold;}
+.small { font-size: $font-size-sm; }
 
 /* Header */
 .header {
@@ -57,13 +58,8 @@
 
 /* Footer */
 .footer {
-  &-background {
-    background-color: $color-lighter-gray;
-  }
 
   &-nav {
-    display: flex;
-    justify-content: space-between;
     top: $header-height;
     position: relative;
   }
