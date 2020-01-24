@@ -105,6 +105,7 @@
   &-slide {
     height: $carousel-height;
     border-radius: $border-radius;
+    background-color: $color-light-gray;
     background-size: cover;
     opacity: 0;
     z-index: 1;
