@@ -7,7 +7,6 @@ $font-size-sm: 12px;
 
 $post-font-size: 20px;
 
-$h0-size: 80px;
 $h1-size: 64px;
 $h2-size: 48px;
 $h3-size: 32px;
@@ -34,6 +33,7 @@ $border-radius: 5px;
 
 /* Typical sizes */
 $content-width: 1024px;
+$content-height-offset: 152px;
 
 $img-width-sm: 208px;
 $img-height-sm: 117px;
@@ -51,3 +51,6 @@ $space-3: ($base-space * 4) !default;
 $space-4: ($base-space * 8) !default;
 
 $header-height: 64px;
+
+/* Transition time */
+$transition-time: 0.3s;

@@ -6,7 +6,7 @@
   <div class="carousel-slide active" style="background-image: url('{{ post.image | prepend: site.baseurl }}');">
     <div class="col-4 p-4 carousel-card">
       <h2 class="pb-4">
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title | truncate: 35 }}</a>
       </h2>
       <div class="col-4 border-top-thick"></div>
       <h6 class="py-4 mb-4">{{ post.date | date: '%d %b %Y' }}</h6>
@@ -16,7 +16,7 @@
   <div class="carousel-slide" style="background-image: url('{{ post.image | prepend: site.baseurl }}');">
     <div class="col-4 p-4 carousel-card">
       <h2 class="pb-4">
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title | truncate: 35 }}</a>
       </h2>
       <div class="col-4 border-top-thick"></div>
       <h6 class="py-4 mb-4">{{ post.date | date: '%d %b %Y' }}</h6>
