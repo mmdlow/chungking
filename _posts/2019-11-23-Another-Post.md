@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I'm sorry Dave, I can't do that
-# image: '/assets/images/portrait-photo-of-man-s-face-2599039.jpg'
+image: '/assets/images/portrait-photo-of-man-s-face-2599039.jpg'
 featured: true
 toc: true
 ---

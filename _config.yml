@@ -12,7 +12,7 @@ email: ""
 description: An elegant, functional Jekyll theme.
 baseurl: "" # The subpath of your site, e.g. /blog
 url: "" # The base hostname & protocol for your site, e.g. http://example.com
-github: "" # The Github repo name for your project
+github: "https://github.com/mmdlow/chungking" # The Github repo name for your project
 instagram: ""
 facebook: ""
 twitter: ""
