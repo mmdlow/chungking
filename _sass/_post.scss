@@ -1,8 +1,10 @@
+@import "variables";
+
 .toc {
   position: sticky;
   top: $space-4 * 2;
   overflow-y: scroll;
-  max-height: calc(100vh - $content-height-offset);
+  max-height: calc(100vh - #{$content-height-offset});
 
   .scroll-nav {
 
