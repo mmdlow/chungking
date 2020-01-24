@@ -10,7 +10,7 @@ title: Chungking
 author: "mmdlow"
 email: ""
 description: An elegant, modern, free Jekyll theme.
-baseurl: "" # The subpath of your site, e.g. /blog
+baseurl: "/chungking" # The subpath of your site, e.g. /blog
 url: "" # The base hostname & protocol for your site, e.g. http://example.com
 github: "https://github.com/mmdlow/chungking" # The Github repo name for your project
 instagram: ""
