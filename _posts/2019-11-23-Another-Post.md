@@ -27,6 +27,6 @@ Amet venenatis urna cursus eget nunc scelerisque viverra mauris in. Pretium fusc
 
 # Here's Johnny
 
-![](/assets/images/green-trees-by-the-lake-2949717.jpg)
+![]({{ site.baseurl }}/assets/images/green-trees-by-the-lake-2949717.jpg)
 
 Suscipit tellus mauris a diam maecenas. Fames ac turpis egestas sed tempus urna. Massa placerat duis ultricies lacus sed turpis tincidunt id aliquet. Ut enim blandit volutpat maecenas volutpat blandit aliquam. Adipiscing vitae proin sagittis nisl. Quam nulla porttitor massa id neque aliquam vestibulum.

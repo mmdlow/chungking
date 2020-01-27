@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Style Guide 
+title: Style Guide
 toc: true
 permalink: /style-guide/
 ---
 
 This is the first paragraph of the post. Paragraphs are separated by blank lines.
 
-This is the second paragraph. Text can be *italic*, **bold**, ~~strikethrough~~, and `monospace`. [Links](/) are underlined. Footnotes appear like so [^1] and so [^2].
+This is the second paragraph. Text can be _italic_, **bold**, ~~strikethrough~~, and `monospace`. [Links](/) are underlined. Footnotes appear like so [^1] and so [^2].
 
 [^1]: Footnote 1 description
 [^2]: Footnote 2 description
@@ -65,8 +65,9 @@ Another nested list:
    1. monkey-fighting
    2. snakes
 2. On this
-  - monday to friday
-  - plane
+
+- monday to friday
+- plane
 
 Definition lists:
 
@@ -113,7 +114,7 @@ Let me tell you something pendejo. You pull any of your crazy shit with us. You 
 
 Last but not least, images:
 
-![small](/assets/images/flower-in-glass-jar.jpg)
-![large](/assets/images/flower-in-glass-jar-large.jpg)
+![small]({{ site.baseurl }}/assets/images/flower-in-glass-jar.jpg)
+![large]({{ site.baseurl }}/assets/images/flower-in-glass-jar-large.jpg)
 
 fin.
