@@ -7,7 +7,7 @@
       </a>
     </div>
     <div class="my-2 header-menu-lg-stretch">
-      {% for page in site.pages %}
+      {% for page in site.html_pages %}
       {% unless page.title == 'Home' %}
       <a class="header-link mr-2 ml-lg-2 mr-lg-0" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
       {% endunless %}
