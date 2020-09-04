@@ -3,7 +3,7 @@
   <div class="col-3 border-left-thick">
     <a href="{{ page.previous.url | prepend: site.baseurl }}">
       <h5 class="ml-3 mb-1">Previous</h5>
-      <span class="ml-3">{{ page.previous.title }}</span>
+      <span class="ml-3 inline-block">{{ page.previous.title }}</span>
     </a>
   </div>
   {% else %}
@@ -13,7 +13,7 @@
   <div class="col-3 border-right-thick text-right">
     <a href="{{ page.next.url | prepend: site.baseurl }}">
       <h5 class="mb-1 mr-3">Next</h5>
-      <span class="mr-3">{{ page.next.title }}</span>
+      <span class="mr-3 inline-block">{{ page.next.title }}</span>
     </a c>
   </div>
   {% else %}
