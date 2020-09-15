@@ -12,6 +12,8 @@ Show off the best posts on your site via an image carousel on the main page. Any
 
 For long posts with multiple sections, generate a table of contents corresponding to the markdown headers in your text. It's as simple as setting `toc: true` in your front matter.
 
+The table of contents feature utilizes [scrollnav.js](http://scrollnav.com/). Due to the way scrollnav works, avoid introducing headers that start with a digit or any non-alphabet character.
+
 #### Mobile-ready
 
 Chungking's responsive design ensures smooth scaling across devices with different screen sizes.

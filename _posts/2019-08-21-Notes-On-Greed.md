@@ -113,7 +113,7 @@ Stroheim’s film seeks not just to exemplify realism, but **the Philosophy of N
 >
 > There is an overall recurring sense of **entrapment and doom**.
 
-#### [1] Governed by Instinct
+##### Governed by Instinct
 
 - Characters as biological beings strongly controlled by instincts that are destructive of others and themselves
 - Not just emotions but **compulsive instincts**
@@ -129,7 +129,7 @@ Stroheim’s film seeks not just to exemplify realism, but **the Philosophy of N
   - **[+]** A loving wife at times **[-]** but larger (pathological) forces of miserliness ultimately control her  
     `Intertitle: “a veritable mental disease”`
 
-#### [2] Governed by Heredity
+##### Governed by Heredity
 
 - McTeague’s father (added by Stroheim) and how McTeague cannot escape from qualities genetically transmitted by his father
 - McTeague cannot escape inheriting his father’s weaknesses and degeneracy
@@ -138,7 +138,7 @@ Stroheim’s film seeks not just to exemplify realism, but **the Philosophy of N
   ```
 - When McTeague succumbs to alcohol, we observe the ghost of his father exerting its influence on the present
 
-#### [3] Limited by Environment
+##### Limited by Environment
 
 - Animals are often confined to their own environment while man can shape the environment to his will
 - In the film though, characters are instead **confined, trapped or even destroyed by their physical environment**
@@ -147,7 +147,7 @@ Stroheim’s film seeks not just to exemplify realism, but **the Philosophy of N
   - **Mac and Trina's living space**:  
     Trina’s greed keeps them living in the cramped space above the dentist’s office despite them being able to afford a house of their own
 
-#### [4] Larger forces
+##### Larger forces
 
 - Literal or symbolic/abstract
 
