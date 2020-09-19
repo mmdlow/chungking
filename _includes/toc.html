@@ -8,4 +8,19 @@
 </div>
 
 <script src="https://unpkg.com/scrollnav@3.0.2/dist/scrollnav.min.umd.js"></script>
-<script src="{{ site.baseurl }}/assets/js/toc.js"></script>
+<!-- <script src="{{ site.baseurl }}/assets/js/toc.js"></script> -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  let options = { debug: false, insertTarget: document.querySelector(".contents") };
+  const toc = "{{ page.toc }}";
+  if (toc) {
+    let headerArray = toc.split(",");
+    if (headerArray.length >= 1) {
+      options.sections = headerArray.shift().trim();
+      options.subSections = headerArray.join(",");
+    }
+  }
+  const content = document.querySelector(".prose");
+  scrollnav.init(content, options);
+});
+</script>

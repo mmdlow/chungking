@@ -2,7 +2,7 @@
 layout: post
 title: I'm sorry Dave, I can't do that
 image: "/assets/images/portrait-photo-of-man-s-face-2599039.jpg"
-toc: true
+toc: h1
 ---
 
 This post has no blurb, thus the post block section on the main page will display a truncation of up to 40 words from the content text of the post. As `toc: true` has been set in the front matter, the table of contents appears on the left.
