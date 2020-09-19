@@ -17,9 +17,26 @@ font-family: $font-family-sans-serif;
 font-size: $font-size;
 }
 
-h1 { font-size: $h1-size; }
-h2 { font-size: $h2-size; }
-h3 { font-size: $h3-size; }
-h4 { font-size: $h4-size; }
-h5 { font-size: $h5-size; }
-h6 { font-size: $h6-size; }
+h1 {
+  font-size: $h1-size;
+  @media(max-width: $breakpoint-lg) { font-size: $h2-size; }
+}
+h2 {
+  font-size: $h2-size;
+  @media(max-width: $breakpoint-lg) { font-size: $h3-size; }
+}
+h3 {
+  font-size: $h3-size;
+  @media(max-width: $breakpoint-lg) { font-size: $h4-size; }
+}
+h4 {
+  font-size: $h4-size;
+  @media(max-width: $breakpoint-lg) { font-size: $h5-size; }
+}
+h5 {
+  font-size: $h5-size;
+  @media(max-width: $breakpoint-lg) { font-size: $h6-size; }
+}
+h6 {
+  font-size: $h6-size;
+}
