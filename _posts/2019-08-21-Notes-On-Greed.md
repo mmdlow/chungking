@@ -1,15 +1,16 @@
 ---
 layout: post
 title: Notes on Greed (1924)
-blurb: Naturalism & Erich Von Stroheim's Use of Misce-en-Scene
+blurb: Naturalism & Erich Von Stroheim's Use of Mise-en-Scene
 image: '/assets/images/greed-cover.jpg'
-toc: true
+toc: h2,h3
 featured: true
+
 ---
 
-# A. Narrative
+## A. Narrative
 
-## A1. Background
+### A1. Background
 
 - Adapted from Frank Norris’ novel **McTeague: A Story of San Francisco** (1899)
 - Butchered masterpiece
@@ -19,13 +20,13 @@ featured: true
   - Studio’s cut: 2 1/4 hrs (the rest of footage has never been recovered)
   - Recently restored version: 4hrs (newly discovered stills added; contains stills of Mac’s father; Maria and Zerkow subplot etc.)
 
-## A2. Prologue
+### A2. Prologue
 
 - Original prologue cut from 2.5 h to 7 min
 - Contained important scenes of McTeague’s background, especially his father
 - **Mac's father** exemplifies idea of **Man as a degraded, beast-like being**
 
-## A3. Subplot 1
+### A3. Subplot 1
 
 - Degraded relationship between **Maria** and **Zerkow**
   - **Maria**: Cleaning lady who sells lottery ticket to **Trina**
@@ -48,16 +49,16 @@ featured: true
   - Inner person undergoing corruption
   - Spiritual death/deformity in the pursuit of material wealth, even if successful
 
-## A4. Subplot 2
+### A4. Subplot 2
 
 - Shy relationship between Mr Grannis and Miss Baker that blossoms into romance
 - A contrast to Mac and Trina’s declining marriage
 
 ---
 
-# B. Von Stroheim's Artistic Manifesto
+## B. Von Stroheim's Artistic Manifesto
 
-## B1. Emphasis on Realism
+### B1. Emphasis on Realism
 
 - In terms of the authenticity of props and settings
 - In terms of seeing reality as it is, and **rejecting a romanticized or idealized reality** (associated with mainstream cinema, even in Stroheim’s time)
@@ -77,16 +78,16 @@ featured: true
 |              | - Use of extreme closeup as he kisses the bird                                              |                                                                               |
 |              | - Large hand in foreground gently handles bird, yet later in the film is used to kill Trina |                                                                               |
 
-## B2. Philosophy of Naturalism
+### B2. Philosophy of Naturalism
 
-### B2-i. A positive view of Man
+#### B2-i. A positive view of Man
 
 - Being guided by reason and able to make rational choices
 - Being free to choose and able to make moral choices
 - Being free to determine one’s life trajectory
 - Potential for self-realization
 
-### B2-ii. A negative (NATURALIST) view of Man
+#### B2-ii. A negative (NATURALIST) view of Man
 
 ```
 "a primitive brute governed by his instincts and limited by his heredity and environment" (Finler 23)
@@ -105,7 +106,7 @@ Stroheim’s film seeks not just to exemplify realism, but **the Philosophy of N
   E.g. Mac and Marcus clawing and tearing at each other like wild animals in the last scene
   ```
 
-#### Quick Summary of Greed's naturalism
+##### Quick Summary of Greed's naturalism
 
 > Presents the view that **Man is an animal-like being controlled and determined by [1][instinct](#1-governed-by-instinct), [2][heredity](#2-governed-by-heredity) and [3][environment](#3-limited-by-environment)**
 >
@@ -113,7 +114,7 @@ Stroheim’s film seeks not just to exemplify realism, but **the Philosophy of N
 >
 > There is an overall recurring sense of **entrapment and doom**.
 
-##### [1] Governed by Instinct
+###### [1] Governed by Instinct
 
 - Characters as biological beings strongly controlled by instincts that are destructive of others and themselves
 - Not just emotions but **compulsive instincts**
@@ -129,7 +130,7 @@ Stroheim’s film seeks not just to exemplify realism, but **the Philosophy of N
   - **[+]** A loving wife at times **[-]** but larger (pathological) forces of miserliness ultimately control her  
     `Intertitle: “a veritable mental disease”`
 
-##### [2] Governed by Heredity
+###### [2] Governed by Heredity
 
 - McTeague’s father (added by Stroheim) and how McTeague cannot escape from qualities genetically transmitted by his father
 - McTeague cannot escape inheriting his father’s weaknesses and degeneracy
@@ -138,7 +139,7 @@ Stroheim’s film seeks not just to exemplify realism, but **the Philosophy of N
   ```
 - When McTeague succumbs to alcohol, we observe the ghost of his father exerting its influence on the present
 
-##### [3] Limited by Environment
+###### [3] Limited by Environment
 
 - Animals are often confined to their own environment while man can shape the environment to his will
 - In the film though, characters are instead **confined, trapped or even destroyed by their physical environment**
@@ -147,7 +148,7 @@ Stroheim’s film seeks not just to exemplify realism, but **the Philosophy of N
   - **Mac and Trina's living space**:  
     Trina’s greed keeps them living in the cramped space above the dentist’s office despite them being able to afford a house of their own
 
-##### [4] Larger forces
+###### [4] Larger forces
 
 - Literal or symbolic/abstract
 
@@ -173,9 +174,9 @@ Stroheim’s film seeks not just to exemplify realism, but **the Philosophy of N
 
 ---
 
-# C. Film-making in Greed
+## C. Film-making in Greed
 
-## C1. Diegesis
+### C1. Diegesis
 
 > Refers to the world of the film’s story
 
@@ -193,7 +194,7 @@ Are the **surreal shots of the hands** diegetic or nondiegetic?
 - **Diagetic**: They are part of the dreams/ they are Trina's hands
 - **Nondiagetic**: They are abstract/symbolic
 
-## C2. Mise-en-scene
+### C2. Mise-en-scene
 
 > All the objects and other elements placed in front of the camera to be photographed
 
@@ -206,7 +207,7 @@ Are the **surreal shots of the hands** diegetic or nondiegetic?
   - Stroheim’s penchant for compositions in depth (using deep space settings)
   - Use of Multiplane Composition
 
-#### Multiplane composition
+#### C2-i. Multiplane composition
 
 > Composition using foreground, middle ground and background
 
@@ -216,14 +217,14 @@ Mac and Marcus at Cliff House
 Wedding/Funeral scene
 ```
 
-### C2-i. Use of Mise-en-scene to reflect Naturalism
+#### C2-ii. Use of Mise-en-scene to reflect Naturalism
 
 The meaning and impact of Greed is achieved through the use of mise-en-scene.
 
 - Emphasis on authenticity
 - Painstakingly detailed, film rewards a viewer who is attentive to mise-en-scene details
 
-#### Excerpt 1: Mac returns home after losing his job at the factory
+##### Excerpt 1: Mac returns home after losing his job at the factory
 
 1. **Giant Tooth**
 
@@ -242,7 +243,7 @@ The meaning and impact of Greed is achieved through the use of mise-en-scene.
    - Used to sit in grandly furnished studio, now sits in a squalid place (the apartment)
    - Trying to hold the marriage together while it’s falling apart
 
-#### Excerpt 2: Mac and Trina go on a date
+##### Excerpt 2: Mac and Trina go on a date
 
 1. **Deep space setting**
 
@@ -263,7 +264,7 @@ The meaning and impact of Greed is achieved through the use of mise-en-scene.
    - Mac triumphant
    - However, next shot shows him going towards the train with cage bar-like pillars in the foreground
 
-## C3. Props and costumes
+### C3. Props and costumes
 
 > Prop: any object that plays a part in the dramatic action
 
@@ -275,7 +276,7 @@ E.g. Truck in Landscape in the Mist
 - At times, an ironic counterpoint to the action
 - Foreshadows what is to come
 
-### Examples
+#### Examples
 
 - Birdcage and the bird
 - Christmas decorations
@@ -300,7 +301,7 @@ Example of Stroheim's use of costume:
 E.g. Trina's wedding gown makes her look ghostly -> instance of the death motif
 ```
 
-## C4. Motifs
+### C4. Motifs
 
 > an element in a film that is repeated in a significant way (not confined to props)
 
@@ -317,7 +318,7 @@ E.g. Musical motifs
   - Pattern of parallels or pattern of contrast
   - Functions as a commentary on the action
 
-### Motifs in Greed
+#### Motifs in Greed
 
 1. **Death images**
 
@@ -330,14 +331,14 @@ E.g. Musical motifs
 
 3. **The bird**
 
-## C5. Setting
+### C5. Setting
 
 1. Rural, Urban then back to Rural (Death Valley)
 2. McTeague and Trina’s home
    - Changes in their home situation parallel their deterioration
    - Reinforces the idea of humans in a degraded state
 
-### C5-i. Deep Space
+#### C5-i. Deep Space
 
 > An arrangement of mise-en-scene so that there is a considerable distance between the plane closest to the camera and the one farthest away. Any or all of these planes may be in focus.
 
@@ -351,6 +352,6 @@ Often used with multiplane composition.
 E.g. Mac and Marcus, cliff house scene
 ```
 
-### C5-ii. Shallow Space
+#### C5-ii. Shallow Space
 
 Opposite of Deep Space.

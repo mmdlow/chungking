@@ -10,9 +10,10 @@ Show off the best posts on your site via an image carousel on the main page. Any
 
 #### Table of contents
 
-For long posts with multiple sections, generate a table of contents corresponding to the markdown headers in your text. It's as simple as setting `toc: true` in your front matter.
+For long posts with multiple sections, generate a table of contents corresponding to the markdown headers in your text. To add a table of contents, set the field `toc` in your front matter, with the headers to be included as the values. For example, `toc: h2, h3,h4` will set h2 headers as main section headings, and h3 and h4 as subsection headings in the table of contents.
 
-The table of contents feature utilizes [scrollnav.js](http://scrollnav.com/). By default, only tier 1 to tier 4 headers (`#` to `####`, or `<h1>` to `<h4>`) are added to the table, with tier 2-4 headers listed as subsections of tier 1 headers.
+
+The table of contents feature utilizes [scrollnav.js](http://scrollnav.com/). 
 
 #### Mobile-ready
 
